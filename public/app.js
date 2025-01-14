@@ -9,13 +9,13 @@ import { getDatabase, ref, set, onValue, push, update,onChildChanged,remove } fr
 import { getFirestore } from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyABQxMGSPwMdr4UBEL1f1dKNZvrh4GmgP8",
-  authDomain: "native-6eb6c.firebaseapp.com",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   databaseURL: "https://native-6eb6c-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "native-6eb6c",
+  projectId: process.env.projectId,
   storageBucket: "native-6eb6c.firebasestorage.app",
   messagingSenderId: "1002338302672",
-  appId: "1:1002338302672:web:092ecb86da8ab626c0bcd5",
+  appId: process.env.appId,
   measurementId: "G-KCRJTBJNB0"
 };
 // task
